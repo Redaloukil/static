@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Upload to AWS') {
             steps {
-                withAWS(region:'eu-east-1') {
+                withAWS(region:'us-east-1') {
                     s3Upload(file:'index.html', bucket:'jenkinsreda', path:'/')
                 }   
             }
