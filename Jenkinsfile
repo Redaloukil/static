@@ -2,7 +2,9 @@ pipeline {
     agent any
     stages {
         stage('Linting HTML') {
-            sh "tidy -q -e *.html"
+            steps {
+                sh "tidy -q -e *.html"
+            }
         }
         stage('Upload aws') {
             steps {
