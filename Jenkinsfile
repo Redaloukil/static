@@ -10,7 +10,7 @@ pipeline {
                 
                 
                 withAWS(region:'us-east-1' , credentials:"aws-static") {
-                   sh "works"
+                   sh "echo works"
                 }   
                 
                 
