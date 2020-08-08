@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
         stage('Hello'){
-            step {
+            steps {
                 sh "echo hello world"
                 sh "echo $AWS_SECRET_ACCESS_KEY"
                 sh "echo $AWS_DEFAULT_REGION"
