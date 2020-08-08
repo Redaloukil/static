@@ -6,7 +6,7 @@ pipeline {
                 sh "echo hello world"
                 sh "echo $AWS_SECRET_ACCESS_KEY"
                 sh "echo $AWS_DEFAULT_REGION"
-                sh "echo $AKIA5GV6U7ZYFN4BVP6N"
+                sh "echo $AWS_ACCESS_KEY_ID"
  
             }
         }
