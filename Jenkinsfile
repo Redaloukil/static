@@ -10,7 +10,9 @@ pipeline {
                 
                 
                 withAWS(region:'us-east-1' , credentials:"aws-static") {
-                   sh "echo works"
+                    s3Upload(pathStyleAccessEnabled: true, payloadSigningEnabled: true, file:'index.html', bucket:'jenkinsreda', path:'/'){
+                        sh "echo works"
+                    }
                 }   
                 
                 
